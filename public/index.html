@@ -3,152 +3,532 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Thierno Souleymane BARRY</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Aissatou Bah</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  #stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: black;
+  }
+</style>
+
 </head>
-<body>
+<body class="text-gray-800">
+<canvas id="stars"></canvas>
 
-<!-- Header -->
-<header>
-    <img src="images/photo_profil.jpg" alt="Photo Thierno" class="profile-pic">
-    <h1>Thierno Souleymane BARRY</h1>
-    <p>Étudiant en fin de BTS en Cybersécurité, Informatique et Réseaux (option: IR), Passionné par le Réseaux et la Cybersécurité</p>
-    <a href="CV_Thierno_Barry.pdf" download class="btn-red">Télécharger mon CV</a>
-</header>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-indigo-950/80 backdrop-blur-xl border-b border-indigo-400/20">
+  <ul class="flex justify-center gap-10 py-5 text-lg font-medium text-gray-100">
+    <li><a href="#profil" class="hover:text-indigo-400 transition">Profil</a></li>
+    <li><a href="#competences" class="hover:text-indigo-400 transition">Compétences</a></li>
+    <li><a href="#experience" class="hover:text-indigo-400 transition">Expériences</a></li>
+    <li><a href="#realisations-techniques" class="hover:text-indigo-400 transition">Projets</a></li>
+    <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
+  </ul>
+</nav>
 
-<!-- Profil & Compétences -->
-<section>
-    <h2>Profil</h2>
-    <p> Étudiant en fin de BTS CIEL (Cybersécurité, Informatique et Réseaux – option IR), je suis à la recherche d’une école d’ingénieur en apprentissage ainsi que d’une entreprise d’accueil pour la rentrée de septembre 2026. Sérieux, curieux et autonome, je m’investis pleinement dans les projets qui me sont confiés et je possède un fort intérêt pour les domaines de l’informatique, des réseaux et de la cybersécurité.</p>
+
+<main class="pt-0 text-gray-800">
+
+    <!-- Accueil -->
+   <section id="profil" class="min-h-screen flex flex-col items-center justify-start pt-32 px-6">
+
+    <!-- Partie photo + titre -->
+    <div class="text-center ">
+        <img src="images/profil.png" alt="Photo Aissatou Bah"
+        class="w-[240px] h-[250px] rounded-full mx-auto mb-6 shadow-md">
+
+        <h1 class="text-4xl font-bold text-white">Aissatou Bah</h1>
+        <h2 class="text-2xl md:text-3xl mt-4 text-indigo-400 font-medium">
+      Étudiante en cybersécurité & réseaux
+    </h2>
+
+        <p class="text-2xl mt-4 text-white">
+        À la recherche d’une alternance en sécurité informatique et infrastructures réseau.
+        </p>
+
+        <!-- Boutons -->
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
+      <a href="CV_Thierno_Barry.pdf" download
+         class="px-8 py-4 rounded-xl bg-indigo-600 text-white text-lg font-medium
+                hover:bg-indigo-500 hover:scale-105 transition duration-300 shadow-lg">
+        Télécharger mon CV
+      </a>
+
+      <a href="#contact"
+         class="px-8 py-4 rounded-xl border border-indigo-400 text-indigo-300 text-lg font-medium
+                hover:bg-indigo-400 hover:text-black hover:scale-105 transition duration-300">
+        Me contacter
+      </a>
+    </div>
+  </div>
+
+    <!-- Partie Profil intégrée dans la même section -->
+    <div class="mt-10 w-full max-w-5xl text-white">
+        <h2 class="text-3xl font-bold text-center mb-8">Profil</h2>
+
+        <div class="bg-white/20 backdrop-blur-xl p-6 rounded-xl shadow-2xl hover:bg-white/20 transition duration-500">
+                
+            <p class="text-xl md:text-2xl leading-relaxed text-center text-gray-200">
+                Passionnée par la cybersécurité, les réseaux et le développement, 
+                je suis motivée par l’envie de comprendre, protéger et optimiser les systèmes informatiques.
+                Curieuse, rigoureuse et autonome, j’aime apprendre en continu et relever de nouveaux défis techniques.
+            </p>
+        </div>
+    </div>
+
 </section>
-<section>
-    <h2>Compétences</h2>
-    <ul>
-        <li><strong>Algorithmique </strong> </li>
-        <li><strong>Langages :</strong> Python, C, C++, C#, PHP, JavaScript, Bash, HTML, CSS</li>
-        <li><strong>Bases de données :</strong> MySQL, MariaDB, SQLite, MongoDB, phpMyAdmin</li>
-        <li><strong>Frameworks :</strong> JUCE/C++, Node.js(express, socket IO), React.js, Vue.js, Nuxt.js</li>
-        <li><strong>Réseaux & Systèmes :</strong> Routage, PfSense, Firewall</li>
-        <li><strong>Systèmes embarqués :</strong> Arduino, Raspberry Pi, ESP32, ESP8266</li>
-        <li><strong>Cybersécurité :</strong> Audit web, tests d’intrusion, sécurité systèmes</li>
-        <li><strong>mathématiques et Physique appliquée :</strong>  logique combinatoire, probabilités, matrices, raisonnement scientifique</li>
-        <li><strong>Modélisation :</strong> UML, SysML, MERISE</li>
-        <li><strong>Outils et Environnements :</strong> Windows 10/11, Linux Ubuntu, macOS, Proxmox, VirtualBox, Cisco Packet Tracer, EVE-NG, Postman, Microsoft Office, LibreOffice, LT spice, Obsidian</li>
-        <li><strong>Personnelles :</strong> Rigueur, autonomie, curiosité, esprit d’équipe</li>
-    </ul>
+
+  <!-- Compétences -->
+<section id="competences" class="py-28 max-w-6xl mx-auto px-6 text-white">
+
+  <!-- Titre -->
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">
+    Compétences
+  </h2>
+
+  <!-- Grille -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">Développement & Programmation</h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>Python, C, C++, C#, PHP, JavaScript, Bash</li>
+        <li>Développement web : HTML, CSS</li>
+        <li>Développement applicatif : React, React Native</li>
+      </ul>
+    </div>
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">Bases de données</h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>MySQL, MariaDB, SQLite, MongoDB</li>
+        <li>Conception & modélisation (MCD, MLD – Merise)</li>
+        <li>Gestion des droits et séparation des privilèges</li>
+      </ul>
+    </div>
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">
+        Réseaux, Systèmes & Cybersécurité
+      </h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>Routage et bases des infrastructures réseau</li>
+        <li>Analyse réseau avec Wireshark</li>
+        <li>Contrôle d’accès, supervision, notions de tests d’intrusion</li>
+      </ul>
+    </div>
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">Embarqué & IoT</h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>ESP32, capteurs (BME280, ENV II), écrans OLED</li>
+        <li>C++ (PlatformIO), MicroPython</li>
+        <li>I²C, timers, gestion des données capteurs</li>
+      </ul>
+    </div>
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">Outils & Environnements</h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>Linux (Ubuntu), Windows</li>
+        <li>Docker, VirtualBox</li>
+        <li>Git & GitHub (versioning, travail en équipe)</li>
+        <li>Figma (UI / UX)</li>
+      </ul>
+    </div>
+
+    <!-- Carte -->
+    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
+                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+      <h3 class="text-2xl font-semibold mb-6">Compétences transversales</h3>
+      <ul class="space-y-3 text-lg text-gray-200">
+        <li>Rigueur et sens de l’organisation</li>
+        <li>Autonomie et capacité d’apprentissage</li>
+        <li>Travail en équipe sur projets techniques</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 
-<!-- Expériences -->
-<section>
-    <h2>Expériences professionnelles</h2>
-    <div class="experience">
-        
-        <h3>Stage - TIKE Sécurité (Avril-Juin 2025)</h3>
-        <ul>
-            <li>Programmation et installation d’alarmes</li>
-            <li>Installation et configuration de caméras IP et NVR</li>
-            <li>Audit site e-commerce & vérification stock</li>
-            <li>Développement application web inventaire</li>
-            <img src="images/stage1.jpg" alt="Stage TIKE Sécurité">
+    
+    <!-- Expérience professionnelle -->
+<section id="experience" class="py-28 max-w-6xl mx-auto px-6 text-white">
+
+  <!-- Titre -->
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+    Expérience professionnelle
+  </h2>
+
+  <!-- Carte principale -->
+  <article
+    class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 hover:scale-[1.01] hover:bg-white/20">
+
+    <!-- En-tête -->
+    <div class="mb-8">
+      <h3 class="text-3xl font-semibold mb-2">
+        Stage – Développement d’une application mobile
+      </h3>
+      <p class="text-lg text-gray-300">
+        Centre Socioculturel de Bar-le-Duc · 8 semaines
+      </p>
+    </div>
+
+    <!-- Description -->
+    <p class="text-xl text-gray-200 leading-relaxed mb-10 max-w-4xl">
+      Participation au développement d’une application mobile de communication
+      destinée aux familles et aux usagers du centre socioculturel,
+      facilitant la diffusion d’informations et d’annonces en temps réel.
+    </p>
+
+    <!-- Grille contenu -->
+    <div class="grid md:grid-cols-2 gap-12 mb-14">
+
+      <!-- Rôle -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-4">Rôle et responsabilités</h4>
+        <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+          <li>Développement de l’interface administrateur</li>
+          <li>Implémentation des écrans clés (connexion, dashboard)</li>
+          <li>Collaboration en équipe frontend / backend</li>
         </ul>
-    </div>
-    <div class="experience">
-        
-        <h3>Employé dans un cyber (Guinée)</h3>
-        <ul>
-            <li>Vente de produits électroniques</li>
-            <li>Aide à la rédaction et impression</li>
+      </div>
+
+      <!-- Apprentissages -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-4">Apprentissages clés</h4>
+        <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+          <li>Cycle complet d’une application mobile</li>
+          <li>Intégration frontend ↔ backend</li>
+          <li>Autonomie et résolution de problèmes</li>
         </ul>
-        <img src="images/stage2.jpg" alt="Cyber Guinée">
+      </div>
     </div>
+
+    <!-- Technologies -->
+    <div class="mb-14">
+      <h4 class="text-2xl font-semibold mb-4">Technologies utilisées</h4>
+      <div class="flex flex-wrap gap-4">
+        <span class="px-4 py-2 rounded-full bg-white/20 text-base">React Native</span>
+        <span class="px-4 py-2 rounded-full bg-white/20 text-base">Expo</span>
+        <span class="px-4 py-2 rounded-full bg-white/20 text-base">Node.js</span>
+        <span class="px-4 py-2 rounded-full bg-white/20 text-base">GitHub</span>
+      </div>
+    </div>
+
+    <!-- Galerie -->
+    <div>
+      <h4 class="text-2xl font-semibold mb-6">Aperçu de l’application</h4>
+
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <img src="images/login.jpeg"
+             class="rounded-xl shadow-lg object-contain
+                    transition duration-300 hover:scale-110"
+             alt="Page de connexion">
+
+        <img src="images/accueil.jpeg"
+             class="rounded-xl shadow-lg object-contain
+                    transition duration-300 hover:scale-110"
+             alt="Accueil">
+
+        <img src="images/envoie.jpeg"
+             class="rounded-xl shadow-lg object-contain
+                    transition duration-300 hover:scale-110"
+             alt="Envoi">
+
+        <img src="images/utilisateur.jpeg"
+             class="rounded-xl shadow-lg object-contain
+                    transition duration-300 hover:scale-110"
+             alt="Utilisateurs">
+
+        <img src="images/historique.png"
+             class="rounded-xl shadow-lg object-contain
+                    transition duration-300 hover:scale-110"
+             alt="Historique">
+      </div>
+    </div>
+
+  </article>
 </section>
 
-<!-- Projets -->
-<section>
-    <h2>Projets scolaires et personnels</h2>
-    <div class="project">
-        
-        <h3>Projet IoT – Capteur connecté</h3>
-        <p>Affichage en temps reel les Informatique de l'eau telsque: la température, l'oxygène, le PH, la conductivité et la qualité  avec Node.js et base de données.</p>
-        <img src="images/projet1.jpg" alt="Projet IoT">
-    </div>
-</section>
-<section>
-    <div class="project">
-        
-        <h3>Messagerie WebSocket</h3>
-        <p>Application de messagerie en temps réel avec une base de données, version téléchargeable pour communication entre amis.</p>
-        <img src="images/projet2.jpg" alt="Messagerie WebSocket">
-    </div>
-</section>
-<section>
-    <div class="project">
-        
-        <h3>Evenment Blaise Robotique</h3>
-        <p>Robot humanoide NAO, une connexion à distance via PuTTY / SSH, programmation en Python pour interaction, reconnaissance faciale, mouvements et animations.</p>
-        <img src="images/projet3.jpg" alt="Robotique">
-    </div>
-<section>
-    <div class="project">
-        
-        <h3>Robotique & programmation</h3>
-        <p>Montage d'un bras robotique Niryo One.</p>
-        <img src="images/projet4.jpg" alt="Robotique">
-    </div>
-</section>
-<section>
-    <div class="project">
-        
-        <h3>Jeux & applications</h3>
-        <p>Jeu Pierre-Papier-Ciseaux, calculatrice en C#, petites applications web (quiz, culture générale, opérations mathématiques).</p>
-        <img src="images/projet5.jpg" alt="Jeux & Applications">
-    </div>
+<!-- Réalisations techniques -->
+<section id="realisations-techniques" class="py-28 max-w-6xl mx-auto px-6 text-white">
+
+  <!-- Titre -->
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">
+    Réalisations techniques
+  </h2>
+
+  <!-- Grille des projets -->
+  <div class="space-y-20">
+
+    <!-- Projet 1 -->
+    <article
+      class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+             transition duration-500 hover:scale-[1.01] hover:bg-white/20">
+
+      <h3 class="text-3xl font-semibold mb-6">Server Bay Monitoring</h3>
+
+      <p class="text-xl text-gray-200 leading-relaxed mb-8 max-w-4xl">
+        Système de supervision permettant de surveiller en temps réel la température
+        et l’humidité de baies serveurs afin de prévenir les risques matériels.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-12 mb-12">
+
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Fonctionnalités clés</h4>
+          <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+            <li>Collecte automatique des données via ESP32</li>
+            <li>Stockage sécurisé dans MariaDB</li>
+            <li>Tableau de bord temps réel</li>
+            <li>Alertes automatiques par email</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Mon rôle</h4>
+          <p class="text-lg text-gray-200 leading-relaxed">
+            Mise en place de l’environnement Docker, configuration de la base de données,
+            gestion des droits d’accès, développement du site de supervision
+            et automatisation des alertes.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Technologies : ESP32, BME280, C++, Docker, MariaDB, PHP, Apache, HTTPS, Chart.js, SMTP
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="images/serverbay (1).png" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+        <img src="images/serverbay (2).png" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+        <img src="images/serverbay (3).png" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+      </div>
+    </article>
+
+    <!-- Projet 2 -->
+    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+
+      <h3 class="text-3xl font-semibold mb-6">PilotBot – Pilotage de robot WifiBot</h3>
+
+      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+        Application C++ permettant de piloter un robot WifiBot à distance
+        via une communication réseau TCP, avec une interface graphique fluide sous Linux.
+      </p>
+
+      <ul class="list-disc list-inside space-y-3 text-lg text-gray-200 mb-8">
+        <li>Pilotage du robot (vitesse, direction, rotation)</li>
+        <li>Communication réseau TCP</li>
+        <li>Programmation parallèle avec threads</li>
+      </ul>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Technologies : C++, GTKmm, sockets TCP, Linux (Debian), Netcat
+      </p>
+
+      <div class="grid grid-cols-2 gap-6">
+        <img src="images/ma (2).jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+        <img src="images/ma (1).jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+      </div>
+    </article>
+
+    <!-- Projet 3 -->
+    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+
+      <h3 class="text-3xl font-semibold mb-6">
+        Projet IoT – Supervision environnementale ESP32
+      </h3>
+
+      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+        Application embarquée permettant la mesure, l’affichage et
+        l’enregistrement de données environnementales via capteurs connectés.
+      </p>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Technologies : ESP32 (M5Stack), MicroPython, capteurs ENV II,
+        I²C, GPIO, timers, carte micro-SD
+      </p>
+
+      <div class="grid grid-cols-2 gap-6">
+        <img src="images/stack.jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+        <img src="images/stack.jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+      </div>
+    </article>
+
+    <!-- Projet 4 -->
+    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+
+      <h3 class="text-3xl font-semibold mb-6">Cloud personnel synchronisé</h3>
+
+      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+        Conception d’une solution de stockage et de synchronisation de fichiers
+        multi-utilisateurs, inspirée des services cloud existants,
+        avec un fort contrôle des données.
+      </p>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Technologies : Node.js, React, MySQL, gestion des permissions
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="images/ma (3).jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+      </div>
+    </article>
+
+    <!-- Projet 5 -->
+    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+
+      <h3 class="text-3xl font-semibold mb-6">
+        Plateforme mode & création assistée par IA
+      </h3>
+
+      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+        Plateforme dédiée à la création et au partage de contenus liés à la mode,
+        intégrant une dimension sociale et des outils d’assistance à la création.
+      </p>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Technologies : React, Node.js, MySQL, Figma, intégration IA
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="images/ma (1).jpeg" class="rounded-xl shadow-lg hover:scale-110 transition" alt="">
+      </div>
+    </article>
+
+  </div>
 </section>
 
-<!-- Parcours académique -->
-<section>
-    <h2>Parcours académique</h2>
-    <ul>
-        <li>2024-2026 : BTS CIEL IR au Lycée Blaise Pascal Longuenesse</li>
-        <li>2023-2024 : Licence 1 Informatique à l'Université Gamal Abdel Nasser de conakry (Guinée)</li>
-        <li>2022-2023 : Baccalauréat Géneral: Math-Physique-Chimie au Lycée Alama Traoré</li>
-    </ul>
-</section>
 
-<!-- Qualités personnelles -->
-<section>
-    <h2>Qualités personnelles</h2>
-    <ul class="qualities">
-        <li>Rigueur</li>
-        <li>Autonomie</li>
-        <li>Curiosité</li>
-        <li>Esprit d’équipe</li>
-    </ul>
-</section>
 
-<!-- Centre d'interet -->
-<section>
-    <h2>Centre d'interet</h2>
-    <ul class="qualities">
-        <li>Nouvelles téchnologies</li>
-        <li>Résolution de problemes et sécurité informatique</li>
-        <li>Innovation</li>
-        <li>Sport</li>
-    </ul>
-</section>
 
-<!-- Contact -->
-<section>
-    <h2>Contact & Réseaux</h2>
-    <ul>
-        <li>Email : <a href="mailto:sb104652003@gmail.com">sb104652003@gmail.com</a></li>
-        <li>Téléphone : +33 7 45 59 30 28</li>
-        <li>GitHub : <a href="https://github.com/Barry471" target="_blank">Barry471</a></li>
-        <li>LinkedIn : <a href="https://www.linkedin.com/in/thierno-souleymane-
-barry-001581331" target="_blank">Thierno Barry</a></li>
-        <li>Adresse : 4 Lieu Dit Bloc Les Herons, 62219 Longuenesse</li>
-    </ul>
-</section>
+    <section id="contact" class="py-15 max-w-6xl mx-auto px-6 text-white">
+    <h2 class="text-4xl font-bold text-center mb-6">Contact</h2>
+    <p class="text-center text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto">
+        Intéressé par mon profil ou par une collaboration en alternance ?
+        Je serai ravie d’échanger avec vous.
+    </p>
+
+    <article class="bg-white/20 backdrop-blur-md rounded-2xl shadow-xl p-10 max-w-3xl mx-auto">
+        <div class="space-y-6 text-lg">
+
+        <!-- Email -->
+        <div class="flex items-center gap-4">
+            <span class="text-indigo-400 text-2xl">✉️</span>
+            <p>
+            <span class="font-semibold">Email :</span>
+            <a href="mailto:abah53220@email.com"
+                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
+                abah53220@email.com
+            </a>
+            </p>
+        </div>
+
+        <!-- Téléphone -->
+        <div class="flex items-center gap-4">
+            <span class="text-indigo-400 text-2xl">📞</span>
+            <p>
+            <span class="font-semibold">Téléphone :</span>
+            <span class="ml-2 text-gray-200">+33 7 45 40 51 10</span>
+            </p>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="flex items-center gap-4">
+            <span class="text-indigo-400 text-2xl">💼</span>
+            <p>
+            <span class="font-semibold">LinkedIn :</span>
+            <a href="https://www.linkedin.com/in/aissatou-bah-a6a142324"
+                target="_blank"
+                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
+                linkedin.com/in/aissatou-bah
+            </a>
+            </p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="flex items-center gap-4">
+            <span class="text-indigo-400 text-2xl">💻</span>
+            <p>
+            <span class="font-semibold">GitHub :</span>
+            <a href="https://github.com/Aissatou33"
+                target="_blank"
+                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
+                github.com/Aissatou33
+            </a>
+            </p>
+        </div>
+
+        </div>
+    </article>
+    </section>
+
+</main>
+
+<script>
+  const canvas = document.getElementById("stars");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const stars = [];
+
+  for (let i = 0; i < 150; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 2,
+      speed: Math.random() * 0.5 + 0.2
+    });
+  }
+
+  function animateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "white";
+
+    stars.forEach(star => {
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+      ctx.fill();
+
+      star.y += star.speed;
+      if (star.y > canvas.height) {
+        star.y = 0;
+        star.x = Math.random() * canvas.width;
+      }
+    });
+
+    requestAnimationFrame(animateStars);
+  }
+
+  animateStars();
+
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
 
 </body>
 </html>
