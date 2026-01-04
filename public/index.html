@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: black;
+    background: rgb(234, 232, 232);
   }
 </style>
 
@@ -35,7 +35,7 @@
 </nav>
 
 
-<main class="pt-0 text-gray-800">
+<main class="pt-0 text-gray-800 ">
 
     <!-- Accueil -->
    <section id="profil" class="min-h-screen flex flex-col items-center justify-start pt-32 px-6">
@@ -45,12 +45,12 @@
         <img src="images/profil.png" alt="Photo Aissatou Bah"
         class="w-[240px] h-[250px] rounded-full mx-auto mb-6 shadow-md">
 
-        <h1 class="text-4xl font-bold text-white">Aissatou Bah</h1>
-        <h2 class="text-2xl md:text-3xl mt-4 text-indigo-400 font-medium">
+        <h1 class="text-4xl font-bold text-black">Aissatou Bah</h1>
+        <h2 class="text-2xl md:text-3xl mt-4 text-indigo-500 font-medium">
       Étudiante en cybersécurité & réseaux
     </h2>
 
-        <p class="text-2xl mt-4 text-white">
+        <p class="text-2xl mt-4 text-black">
         À la recherche d’une alternance en sécurité informatique et infrastructures réseau.
         </p>
 
@@ -63,20 +63,20 @@
       </a>
 
       <a href="#contact"
-         class="px-8 py-4 rounded-xl border border-indigo-400 text-indigo-300 text-lg font-medium
-                hover:bg-indigo-400 hover:text-black hover:scale-105 transition duration-300">
+         class="px-8 py-4 rounded-xl bg-indigo-600 text-white text-lg font-medium
+                hover:bg-indigo-500 hover:scale-105 transition duration-300 shadow-lg">
         Me contacter
       </a>
     </div>
   </div>
 
     <!-- Partie Profil intégrée dans la même section -->
-    <div class="mt-10 w-full max-w-5xl text-white">
+    <div class="mt-10 w-full max-w-7xl text-black">
         <h2 class="text-3xl font-bold text-center mb-8">Profil</h2>
 
-        <div class="bg-white/20 backdrop-blur-xl p-6 rounded-xl shadow-2xl hover:bg-white/20 transition duration-500">
+        <div class=" backdrop-blur-xl border-b border-indigo-400/20 p-6 rounded-xl shadow-2xl  bg-indigo-950/80 ">
                 
-            <p class="text-xl md:text-2xl leading-relaxed text-center text-gray-200">
+            <p class="text-xl md:text-2xl leading-relaxed text-center text-white ">
                 Passionnée par la cybersécurité, les réseaux et le développement, 
                 je suis motivée par l’envie de comprendre, protéger et optimiser les systèmes informatiques.
                 Curieuse, rigoureuse et autonome, j’aime apprendre en continu et relever de nouveaux défis techniques.
@@ -87,7 +87,7 @@
 </section>
 
   <!-- Compétences -->
-<section id="competences" class="py-28 max-w-6xl mx-auto px-6 text-white">
+<section id="competences" class="py-28 max-w-7xl mx-auto text-black">
 
   <!-- Titre -->
   <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">
@@ -95,13 +95,13 @@
   </h2>
 
   <!-- Grille -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-white">
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full 
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80">
       <h3 class="text-2xl font-semibold mb-6">Développement & Programmation</h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg">
         <li>Python, C, C++, C#, PHP, JavaScript, Bash</li>
         <li>Développement web : HTML, CSS</li>
         <li>Développement applicatif : React, React Native</li>
@@ -109,10 +109,10 @@
     </div>
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80">
       <h3 class="text-2xl font-semibold mb-6">Bases de données</h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg ">
         <li>MySQL, MariaDB, SQLite, MongoDB</li>
         <li>Conception & modélisation (MCD, MLD – Merise)</li>
         <li>Gestion des droits et séparation des privilèges</li>
@@ -120,12 +120,12 @@
     </div>
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80">
       <h3 class="text-2xl font-semibold mb-6">
         Réseaux, Systèmes & Cybersécurité
       </h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg ">
         <li>Routage et bases des infrastructures réseau</li>
         <li>Analyse réseau avec Wireshark</li>
         <li>Contrôle d’accès, supervision, notions de tests d’intrusion</li>
@@ -133,10 +133,10 @@
     </div>
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80">
       <h3 class="text-2xl font-semibold mb-6">Embarqué & IoT</h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg ">
         <li>ESP32, capteurs (BME280, ENV II), écrans OLED</li>
         <li>C++ (PlatformIO), MicroPython</li>
         <li>I²C, timers, gestion des données capteurs</li>
@@ -144,10 +144,10 @@
     </div>
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80 ">
       <h3 class="text-2xl font-semibold mb-6">Outils & Environnements</h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg ">
         <li>Linux (Ubuntu), Windows</li>
         <li>Docker, VirtualBox</li>
         <li>Git & GitHub (versioning, travail en équipe)</li>
@@ -156,10 +156,10 @@
     </div>
 
     <!-- Carte -->
-    <div class="bg-white/15 backdrop-blur-xl p-10 rounded-2xl shadow-2xl
-                hover:bg-white/20 transition duration-500 hover:-translate-y-1">
+    <div class=" backdrop-blur-xl p-10 rounded-2xl shadow-2xl w-full
+                 transition duration-500 hover:-translate-y-1 bg-indigo-950/80">
       <h3 class="text-2xl font-semibold mb-6">Compétences transversales</h3>
-      <ul class="space-y-3 text-lg text-gray-200">
+      <ul class="space-y-3 text-lg">
         <li>Rigueur et sens de l’organisation</li>
         <li>Autonomie et capacité d’apprentissage</li>
         <li>Travail en équipe sur projets techniques</li>
@@ -171,30 +171,30 @@
 
     
     <!-- Expérience professionnelle -->
-<section id="experience" class="py-28 max-w-6xl mx-auto px-6 text-white">
+<section id="experience" class="py-16 max-w-7xl mx-auto px-6 ">
 
   <!-- Titre -->
-  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black">
     Expérience professionnelle
   </h2>
 
   <!-- Carte principale -->
   <article
-    class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10
-           transition duration-500 hover:scale-[1.01] hover:bg-white/20">
+    class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
     <!-- En-tête -->
     <div class="mb-8">
       <h3 class="text-3xl font-semibold mb-2">
         Stage – Développement d’une application mobile
       </h3>
-      <p class="text-lg text-gray-300">
+      <p class="text-lg ">
         Centre Socioculturel de Bar-le-Duc · 8 semaines
       </p>
     </div>
 
     <!-- Description -->
-    <p class="text-xl text-gray-200 leading-relaxed mb-10 max-w-4xl">
+    <p class="text-xl leading-relaxed mb-10 max-w-4xl">
       Participation au développement d’une application mobile de communication
       destinée aux familles et aux usagers du centre socioculturel,
       facilitant la diffusion d’informations et d’annonces en temps réel.
@@ -206,7 +206,7 @@
       <!-- Rôle -->
       <div>
         <h4 class="text-2xl font-semibold mb-4">Rôle et responsabilités</h4>
-        <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+        <ul class="list-disc list-inside space-y-3 text-lg">
           <li>Développement de l’interface administrateur</li>
           <li>Implémentation des écrans clés (connexion, dashboard)</li>
           <li>Collaboration en équipe frontend / backend</li>
@@ -216,7 +216,7 @@
       <!-- Apprentissages -->
       <div>
         <h4 class="text-2xl font-semibold mb-4">Apprentissages clés</h4>
-        <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+        <ul class="list-disc list-inside space-y-3 text-lg">
           <li>Cycle complet d’une application mobile</li>
           <li>Intégration frontend ↔ backend</li>
           <li>Autonomie et résolution de problèmes</li>
@@ -228,10 +228,10 @@
     <div class="mb-14">
       <h4 class="text-2xl font-semibold mb-4">Technologies utilisées</h4>
       <div class="flex flex-wrap gap-4">
-        <span class="px-4 py-2 rounded-full bg-white/20 text-base">React Native</span>
-        <span class="px-4 py-2 rounded-full bg-white/20 text-base">Expo</span>
-        <span class="px-4 py-2 rounded-full bg-white/20 text-base">Node.js</span>
-        <span class="px-4 py-2 rounded-full bg-white/20 text-base">GitHub</span>
+        <span class="px-4 py-2 rounded-full bg-white/40 text-base">React Native</span>
+        <span class="px-4 py-2 rounded-full bg-white/40 text-base">Expo</span>
+        <span class="px-4 py-2 rounded-full bg-white/40 text-base">Node.js</span>
+        <span class="px-4 py-2 rounded-full bg-white/40 text-base">GitHub</span>
       </div>
     </div>
 
@@ -262,7 +262,7 @@
 
         <img src="images/historique.png"
              class="rounded-xl shadow-lg object-contain
-                    transition duration-300 hover:scale-110"
+                    transition duration-400 hover:scale-110"
              alt="Historique">
       </div>
     </div>
@@ -271,7 +271,7 @@
 </section>
 
 <!-- Réalisations techniques -->
-<section id="realisations-techniques" class="py-28 max-w-6xl mx-auto px-6 text-white">
+<section id="realisations-techniques" class="py-20 max-w-7xl mx-auto px-6 text-black">
 
   <!-- Titre -->
   <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">
@@ -283,12 +283,12 @@
 
     <!-- Projet 1 -->
     <article
-      class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10
-             transition duration-500 hover:scale-[1.01] hover:bg-white/20">
+      class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
       <h3 class="text-3xl font-semibold mb-6">Server Bay Monitoring</h3>
 
-      <p class="text-xl text-gray-200 leading-relaxed mb-8 max-w-4xl">
+      <p class="text-xl leading-relaxed mb-8 max-w-4xl">
         Système de supervision permettant de surveiller en temps réel la température
         et l’humidité de baies serveurs afin de prévenir les risques matériels.
       </p>
@@ -297,7 +297,7 @@
 
         <div>
           <h4 class="text-2xl font-semibold mb-4">Fonctionnalités clés</h4>
-          <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+          <ul class="list-disc list-inside space-y-3 text-lg">
             <li>Collecte automatique des données via ESP32</li>
             <li>Stockage sécurisé dans MariaDB</li>
             <li>Tableau de bord temps réel</li>
@@ -307,7 +307,7 @@
 
         <div>
           <h4 class="text-2xl font-semibold mb-4">Mon rôle</h4>
-          <p class="text-lg text-gray-200 leading-relaxed">
+          <p class="text-lg leading-relaxed">
             Mise en place de l’environnement Docker, configuration de la base de données,
             gestion des droits d’accès, développement du site de supervision
             et automatisation des alertes.
@@ -315,7 +315,7 @@
         </div>
       </div>
 
-      <p class="text-lg text-gray-300 mb-10">
+      <p class="text-lg mb-10">
         Technologies : ESP32, BME280, C++, Docker, MariaDB, PHP, Apache, HTTPS, Chart.js, SMTP
       </p>
 
@@ -327,22 +327,23 @@
     </article>
 
     <!-- Projet 2 -->
-    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+    <article class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
       <h3 class="text-3xl font-semibold mb-6">PilotBot – Pilotage de robot WifiBot</h3>
 
-      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+      <p class="text-xl mb-8 max-w-4xl">
         Application C++ permettant de piloter un robot WifiBot à distance
         via une communication réseau TCP, avec une interface graphique fluide sous Linux.
       </p>
 
-      <ul class="list-disc list-inside space-y-3 text-lg text-gray-200 mb-8">
+      <ul class="list-disc list-inside space-y-3 text-lg mb-8">
         <li>Pilotage du robot (vitesse, direction, rotation)</li>
         <li>Communication réseau TCP</li>
         <li>Programmation parallèle avec threads</li>
       </ul>
 
-      <p class="text-lg text-gray-300 mb-10">
+      <p class="text-lg mb-10">
         Technologies : C++, GTKmm, sockets TCP, Linux (Debian), Netcat
       </p>
 
@@ -353,18 +354,19 @@
     </article>
 
     <!-- Projet 3 -->
-    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+    <article class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
       <h3 class="text-3xl font-semibold mb-6">
         Projet IoT – Supervision environnementale ESP32
       </h3>
 
-      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+      <p class="text-xl mb-8 max-w-4xl">
         Application embarquée permettant la mesure, l’affichage et
         l’enregistrement de données environnementales via capteurs connectés.
       </p>
 
-      <p class="text-lg text-gray-300 mb-10">
+      <p class="text-lg  mb-10">
         Technologies : ESP32 (M5Stack), MicroPython, capteurs ENV II,
         I²C, GPIO, timers, carte micro-SD
       </p>
@@ -376,17 +378,18 @@
     </article>
 
     <!-- Projet 4 -->
-    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+    <article class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
       <h3 class="text-3xl font-semibold mb-6">Cloud personnel synchronisé</h3>
 
-      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+      <p class="text-xl  mb-8 max-w-4xl">
         Conception d’une solution de stockage et de synchronisation de fichiers
         multi-utilisateurs, inspirée des services cloud existants,
         avec un fort contrôle des données.
       </p>
 
-      <p class="text-lg text-gray-300 mb-10">
+      <p class="text-lg  mb-10">
         Technologies : Node.js, React, MySQL, gestion des permissions
       </p>
 
@@ -396,18 +399,19 @@
     </article>
 
     <!-- Projet 5 -->
-    <article class="bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 hover:bg-white/20 transition">
+    <article class="bg-indigo-950/80 backdrop-blur-xl rounded-2xl shadow-2xl p-10
+           transition duration-500 text-white ">
 
       <h3 class="text-3xl font-semibold mb-6">
         Plateforme mode & création assistée par IA
       </h3>
 
-      <p class="text-xl text-gray-200 mb-8 max-w-4xl">
+      <p class="text-xl mb-8 max-w-4xl">
         Plateforme dédiée à la création et au partage de contenus liés à la mode,
         intégrant une dimension sociale et des outils d’assistance à la création.
       </p>
 
-      <p class="text-lg text-gray-300 mb-10">
+      <p class="text-lg  mb-10">
         Technologies : React, Node.js, MySQL, Figma, intégration IA
       </p>
 
@@ -420,68 +424,122 @@
 </section>
 
 
+<footer id="contact" class="w-full bg-gray-100 text-black py-8">
+  <div class="max-w-7xl mx-auto px-6 ">
 
+    <!-- Titre -->
+    <h2 class="text-4xl font-bold text-center mb-6 text-black">
+      Contact
+    </h2>
 
-    <section id="contact" class="py-15 max-w-6xl mx-auto px-6 text-white">
-    <h2 class="text-4xl font-bold text-center mb-6">Contact</h2>
-    <p class="text-center text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto">
-        Intéressé par mon profil ou par une collaboration en alternance ?
-        Je serai ravie d’échanger avec vous.
+    <p class="text-center text-xl md:text-2xl mb-14 max-w-5xl mx-auto text-gray-800">
+      Intéressé par mon profil ou par une collaboration en alternance ?
+      Je serai ravie d’échanger avec vous.
     </p>
 
-    <article class="bg-white/20 backdrop-blur-md rounded-2xl shadow-xl p-10 max-w-3xl mx-auto">
-        <div class="space-y-6 text-lg">
+    <!-- Conteneur principal -->
+    <article class="bg-white-70 rounded-3xl shadow-2xl p-12 max-w-6xl mx-auto border border-gray-200 bg-indigo-950/80">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start text-white">
 
-        <!-- Email -->
-        <div class="flex items-center gap-4">
-            <span class="text-indigo-400 text-2xl">✉️</span>
-            <p>
-            <span class="font-semibold">Email :</span>
-            <a href="mailto:abah53220@email.com"
-                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
-                abah53220@email.com
-            </a>
-            </p>
-        </div>
+       <div class="space-y-8 text-lg">
 
-        <!-- Téléphone -->
-        <div class="flex items-center gap-4">
-            <span class="text-indigo-400 text-2xl">📞</span>
-            <p>
-            <span class="font-semibold">Téléphone :</span>
-            <span class="ml-2 text-gray-200">+33 7 45 40 51 10</span>
-            </p>
-        </div>
+      <p class="text-white">
+        Vous pouvez me contacter directement via les informations ci-dessous
+        ou m’envoyer un message à l’aide du formulaire.
+      </p>
 
-        <!-- LinkedIn -->
-        <div class="flex items-center gap-4">
-            <span class="text-indigo-400 text-2xl">💼</span>
-            <p>
-            <span class="font-semibold">LinkedIn :</span>
-            <a href="https://www.linkedin.com/in/aissatou-bah-a6a142324"
-                target="_blank"
-                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
-                linkedin.com/in/aissatou-bah
-            </a>
-            </p>
-        </div>
+      <!-- Email -->
+      <div class="flex items-center gap-4 ">
+        <span class="text-2xl">✉️</span>
+        <p>
+          <span class="font-semibold">Email :</span>
+          <a href="mailto:abah53220@email.com"
+            class="ml-2 underline hover:text-gray-600 transition">
+            abah53220@email.com
+          </a>
+        </p>
+      </div>
 
-        <!-- GitHub -->
-        <div class="flex items-center gap-4">
-            <span class="text-indigo-400 text-2xl">💻</span>
-            <p>
-            <span class="font-semibold">GitHub :</span>
-            <a href="https://github.com/Aissatou33"
-                target="_blank"
-                class="ml-2 text-indigo-300 hover:text-indigo-400 transition underline">
-                github.com/Aissatou33
-            </a>
-            </p>
-        </div>
+      <!-- Téléphone -->
+      <div class="flex items-center gap-4">
+        <span class="text-2xl">📞</span>
+        <p>
+          <span class="font-semibold">Téléphone :</span>
+          <span class="ml-2">+33 7 45 40 51 10</span>
+        </p>
+      </div>
 
-        </div>
-    </article>
-    </section>
+      <!-- LinkedIn -->
+      <div class="flex items-center gap-4">
+        <span class="text-2xl">💼</span>
+        <p>
+          <span class="font-semibold">LinkedIn :</span>
+          <a href="https://www.linkedin.com/in/aissatou-bah-a6a142324"
+            target="_blank"
+            class="ml-2 underline hover:text-gray-600 transition">
+            linkedin.com/in/aissatou-bah
+          </a>
+        </p>
+      </div>
+
+      <!-- GitHub -->
+      <div class="flex items-center gap-4">
+        <span class="text-2xl">💻</span>
+        <p>
+          <span class="font-semibold">GitHub :</span>
+          <a href="https://github.com/Aissatou33"
+            target="_blank"
+            class="ml-2 underline hover:text-gray-600 transition">
+            github.com/Aissatou33
+          </a>
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-2xl font-semibold mb-6">
+        Envoyez-moi un message
+      </h3>
+
+      <form
+        action="https://formspree.io/f/xjgkwgvj"
+        method="POST"
+        class="space-y-6"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Votre nom"
+          required
+          class="w-full px-6 py-4 rounded-full bg-gray-200 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Votre email"
+          required
+          class="w-full px-6 py-4 rounded-full bg-gray-200 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        />
+
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          required
+          rows="5"
+          class="w-full px-6 py-4 rounded-3xl bg-gray-200 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 resize-none"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="w-full py-4 bg-black text-white rounded-full hover:bg-gray-800 transition font-medium"
+        >
+          Envoyer le message
+        </button>
+      </form>
+  </div>
+
+</footer>
+
 
 </main>
 
